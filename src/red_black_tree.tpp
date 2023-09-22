@@ -6,7 +6,7 @@
 
 #include "red_black_tree.h"
 
-namespace sjokerooo7 {
+namespace jokerooo7 {
 
 template <typename K>
 RBTree<K>::RBTree(std::initializer_list<value_type> const& items) {
