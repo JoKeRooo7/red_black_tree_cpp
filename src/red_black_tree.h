@@ -59,17 +59,17 @@ class RBTree {
   std::vector<std::pair<iterator, bool>> insert_many(Args&&... args);
 
  protected:
-  std::pair<TreeNode<value_type>*, bool> Content(
-      const value_type& value) const;  // возрат содержимого, если есть
+  // возрат содержимого, если есть
+  std::pair<TreeNode<value_type>*, bool> Content(const value_type& value) const;  
 
   std::pair<iterator, bool> InsertInTree(const value_type& value,
                                          std::pair<bool, bool> mode);
-
-  bool EqualityOfClasses(
-      const RBTree& other);  // проверка на принадлежность к этому классу
+  // проверка на принадлежность к этому классу
+  bool EqualityOfClasses(const RBTree& other);  
 
  private:
-  TreeNode<value_type>* tree_node_ = nullptr;  // Корень дерева
+ // Корень дерева
+  TreeNode<value_type>* tree_node_ = nullptr;  
   size_type number_of_elements_ = 0;
 
   void ClearRecursive(TreeNode<value_type>*& node_) const;

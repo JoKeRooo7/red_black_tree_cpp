@@ -620,7 +620,9 @@ bool RBTree<K>::AreTheyEqual(const KT& arg_one, const KT& arg_two) const {
   return arg_one == arg_two;
 }
 
-// iterators
+// ***********************************************************
+// *-------------------- CLASS ITERATOR  --------------------*
+// ***********************************************************
 
 template <typename K>
 typename RBTree<K>::TreeIterator::reference
